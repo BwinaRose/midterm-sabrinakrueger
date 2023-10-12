@@ -6,6 +6,8 @@
     <string name="current_day_text">Current Day</string>
     <string name="random_color_text">Random Color</string>
     <string name="print_list_text">Print List</string>
-    <string name="favorite_number_text">Favorite Number</string>
-    <string name="click_anywhere">Click anywhere!</string>
+    <string name="random_number">Random Number</string>
+    <string name="play_sound">Play Sound</string>
+    <string name="click_anywhere">click anywhere!</string>
+    <string name="random_number_btn">Random Number</string>
 </resources>

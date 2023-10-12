@@ -30,7 +30,8 @@
         <activity android:name=".ui.CurrentDayActivity"/>
         <activity android:name=".ui.RandomColorActivity"/>
         <activity android:name=".ui.PrintListActivity"/>
-        <activity android:name=".ui.FavoriteNumber"/>
+        <activity android:name=".ui.RandomNumber"/>
+        <activity android:name=".ui.PlaySound"/>
     </application>
 
 </manifest>

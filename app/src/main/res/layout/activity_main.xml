@@ -13,7 +13,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:padding="20dp"
+        android:padding="10dp"
         android:layout_margin="40dp"
         android:text="@string/hello_world"/>
 
@@ -24,7 +24,7 @@
         app:layout_constraintTop_toBottomOf="@id/challenge_one"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:padding="20dp"
+        android:padding="10dp"
         android:layout_margin="40dp"
         android:text="@string/sum_of_two_numbers"/>
 
@@ -35,7 +35,7 @@
         app:layout_constraintTop_toBottomOf="@id/challenge_two"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:padding="20dp"
+        android:padding="10dp"
         android:layout_margin="40dp"
         android:text="@string/current_day_text"/>
 
@@ -46,7 +46,7 @@
         app:layout_constraintTop_toBottomOf="@id/challenge_three"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:padding="20dp"
+        android:padding="10dp"
         android:layout_margin="40dp"
         android:text="@string/random_color_text"/>
 
@@ -54,22 +54,37 @@
         android:id="@+id/challenge_five"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/challenge_four"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:padding="20dp"
         android:layout_margin="40dp"
-        android:text="@string/print_list_text"/>
+        android:layout_marginTop="4dp"
+        android:padding="10dp"
+        android:text="@string/print_list_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/challenge_four" />
 
     <Button
-        android:id="@+id/challenge_six"
+        android:id="@+id/randomNum"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/challenge_five"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:padding="20dp"
         android:layout_margin="40dp"
-        android:text="@string/favorite_number_text"/>
+        android:drawableLeft="@drawable/dice"
+        android:padding="20dp"
+        android:text="@string/random_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/challenge_five" />
+
+    <Button
+        android:id="@+id/playSound"
+        android:layout_width="0dp"
+        android:drawableLeft="@drawable/music_note"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:layout_marginTop="4dp"
+        android:padding="20dp"
+        android:text="@string/play_sound"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/randomNum" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

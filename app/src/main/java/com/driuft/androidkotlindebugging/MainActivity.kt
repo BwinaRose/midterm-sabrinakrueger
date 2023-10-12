@@ -1,12 +1,10 @@
 package com.driuft.androidkotlindebugging
 
-import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.driuft.androidkotlindebugging.ui.*
-import kotlin.coroutines.coroutineContext
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,7 +13,8 @@ class MainActivity : AppCompatActivity() {
     private val challengeThreeButton: Button get() = findViewById(R.id.challenge_three)
     private val challengeFourButton: Button get() = findViewById(R.id.challenge_four)
     private val challengeFiveButton: Button get() = findViewById(R.id.challenge_five)
-    private val challengeSixButton: Button get() = findViewById(R.id.challenge_six)
+    private val challengeSixButton: Button get() = findViewById(R.id.randomNum)
+    private val challengeSevenButton: Button get() = findViewById(R.id.playSound)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,7 +25,8 @@ class MainActivity : AppCompatActivity() {
         challengeThreeButton.setOnClickListener { launchCurrentDayActivity() }
         challengeFourButton.setOnClickListener { launchRandomColorActivity() }
         challengeFiveButton.setOnClickListener { launchPrintListActivity() }
-        challengeSixButton.setOnClickListener { launchFavoriteNumberActivity() }
+        challengeSixButton.setOnClickListener { launchRandomNumberActivity() }
+        challengeSevenButton.setOnClickListener { launchPlaySoundActivity() }
     }
 
     private fun launchHelloWorldActivity() {
@@ -54,8 +54,13 @@ class MainActivity : AppCompatActivity() {
         startActivity(i)
     }
 
-    private fun launchFavoriteNumberActivity() {
-        val i = Intent(this, FavoriteNumber::class.java)
+    private fun launchRandomNumberActivity() {
+        val i = Intent(this, RandomNumber::class.java)
+        startActivity(i)
+    }
+
+    private fun launchPlaySoundActivity() {
+        val i = Intent(this, PlaySound::class.java)
         startActivity(i)
     }
 }
