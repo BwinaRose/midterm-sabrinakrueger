@@ -20,6 +20,7 @@ class PlaySound :AppCompatActivity() {
         val mediaPlayer: MediaPlayer = MediaPlayer.create(applicationContext, R.raw.fanfare_trumpets)
         mediaPlayer.isLooping
         mediaPlayer.start()
+        rootView.setBackgroundColor(Color.GREEN)
 
 
         playSnd.setOnClickListener {
